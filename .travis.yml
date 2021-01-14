@@ -34,4 +34,4 @@ jobs:
       env: VERSION_SHORT=0.14
     - <<: *build
       if: branch = master AND type != pull_request
-      script: DOCKERHUB_USERNAME=$DOCKER_USERNAME DOCKERHUB_PASSWORD=$DOCKER_PASSWORD DOCKERHUB_REPOSITORY='factoriotools/factorio' README_FILEPATH='./README.md' ./update-dockerhub-description.sh
+      script: DOCKERHUB_USERNAME=$DOCKER_USERNAME DOCKERHUB_PASSWORD=$DOCKER_PASSWORD DOCKERHUB_REPOSITORY='rolaca11/factorio' README_FILEPATH='./README.md' ./update-dockerhub-description.sh
